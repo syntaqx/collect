@@ -9,6 +9,8 @@ import (
 )
 
 func TestIndex(t *testing.T) {
+	t.Parallel()
+
 	assert := assert.New(t)
 
 	vs := []string{"first", "second", "third"}
@@ -20,6 +22,8 @@ func TestIndex(t *testing.T) {
 }
 
 func TestAny(t *testing.T) {
+	t.Parallel()
+
 	assert := assert.New(t)
 
 	vs := []string{"foo", "bar"}
@@ -41,6 +45,8 @@ func TestAny(t *testing.T) {
 }
 
 func TestAll(t *testing.T) {
+	t.Parallel()
+
 	assert := assert.New(t)
 
 	vs := []string{"foo", "bar"}
@@ -62,6 +68,8 @@ func TestAll(t *testing.T) {
 }
 
 func TestFilter(t *testing.T) {
+	t.Parallel()
+
 	assert := assert.New(t)
 
 	vs := []string{"apple", "banana", "cherry"}
@@ -87,6 +95,8 @@ func TestFilter(t *testing.T) {
 }
 
 func TestMap(t *testing.T) {
+	t.Parallel()
+
 	assert := assert.New(t)
 
 	vs := []string{"lorem", "ipsum", "dolor", "sit"}
