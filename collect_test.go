@@ -21,6 +21,18 @@ func TestIndex(t *testing.T) {
 	assert.Equal(-1, Index(vs, "fourth"))
 }
 
+func TestInclude(t *testing.T) {
+	t.Parallel()
+
+	assert := assert.New(t)
+
+	vs := []string{"foo", "bar"}
+
+	assert.True(Include(vs, "foo"))
+	assert.True(Include(vs, "bar"))
+	assert.False(Include(vs, "baz"))
+}
+
 func TestAny(t *testing.T) {
 	t.Parallel()
 
