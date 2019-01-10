@@ -1,7 +1,9 @@
 # collect
 
+[![GoDoc](https://godoc.org/github.com/syntaqx/collect?status.svg)](https://godoc.org/github.com/syntaqx/collect)
 [![Build Status](https://travis-ci.org/syntaqx/collect.svg?branch=master)](https://travis-ci.org/syntaqx/collect)
 [![codecov](https://codecov.io/gh/syntaqx/collect/branch/master/graph/badge.svg)](https://codecov.io/gh/syntaqx/collect)
+[![Go Report Card](https://goreportcard.com/badge/github.com/syntaqx/protokit)](https://goreportcard.com/report/github.com/syntaqx/protokit)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsyntaqx%2Fcollect.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsyntaqx%2Fcollect?ref=badge_shield)
 
 > `collect` provides functions to perform operations on collections of data.
