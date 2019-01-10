@@ -1,6 +1,7 @@
 # collect
 
 [![Build Status](https://travis-ci.org/syntaqx/collect.svg?branch=master)](https://travis-ci.org/syntaqx/collect)
+[![codecov](https://codecov.io/gh/syntaqx/collect/branch/master/graph/badge.svg)](https://codecov.io/gh/syntaqx/collect)
 
 > `collect` provides functions to perform operations on collections of data.
 
@@ -14,3 +15,11 @@ if and when they are specifically needed for your program and data types.
 
 This package implements some of the most common collection functions that I
 like to be able to use in a pinch, and eventually I'll expand on it.
+
+## License
+
+[MIT]: https://opensource.org/licenses/MIT
+
+collect is open source software released under the [MIT license][MIT].
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsyntaqx%2Fcollect.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsyntaqx%2Fcollect?ref=badge_large)
