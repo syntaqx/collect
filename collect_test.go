@@ -40,20 +40,9 @@ func TestAny(t *testing.T) {
 
 	vs := []string{"foo", "bar"}
 
-	assert.True(Any(vs, func(s string) bool {
-		return true
-	}))
-
-	assert.True(Any(vs, func(s string) bool {
-		if s == "bar" {
-			return false
-		}
-		return true
-	}))
-
-	assert.False(Any(vs, func(s string) bool {
-		return false
-	}))
+	assert.True(Any(vs, func(s string) bool { return true }))
+	assert.True(Any(vs, func(s string) bool { return s == "bar" }))
+	assert.False(Any(vs, func(s string) bool { return false }))
 }
 
 func TestAll(t *testing.T) {
@@ -63,20 +52,9 @@ func TestAll(t *testing.T) {
 
 	vs := []string{"foo", "bar"}
 
-	assert.True(All(vs, func(s string) bool {
-		return true
-	}))
-
-	assert.False(All(vs, func(s string) bool {
-		if s == "bar" {
-			return false
-		}
-		return true
-	}))
-
-	assert.False(All(vs, func(s string) bool {
-		return false
-	}))
+	assert.True(All(vs, func(s string) bool { return true }))
+	assert.False(All(vs, func(s string) bool { return s == "bar" }))
+	assert.False(All(vs, func(s string) bool { return false }))
 }
 
 func TestFilter(t *testing.T) {
@@ -86,17 +64,9 @@ func TestFilter(t *testing.T) {
 
 	vs := []string{"apple", "banana", "cherry"}
 
-	a := Filter(vs, func(s string) bool {
-		return s[0] == 'a'
-	})
-
-	b := Filter(vs, func(s string) bool {
-		return s[0] == 'b'
-	})
-
-	c := Filter(vs, func(s string) bool {
-		return s[0] == 'c'
-	})
+	a := Filter(vs, func(s string) bool { return s[0] == 'a' })
+	b := Filter(vs, func(s string) bool { return s[0] == 'b' })
+	c := Filter(vs, func(s string) bool { return s[0] == 'c' })
 
 	assert.Len(a, 1)
 	assert.Equal("apple", a[0])
