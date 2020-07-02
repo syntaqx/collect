@@ -3,8 +3,8 @@
 [![Test](https://github.com/syntaqx/collect/workflows/Test/badge.svg)](https://github.com/syntaqx/collect/actions?query=workflow%3ATest)
 [![golangci-lint](https://github.com/syntaqx/collect/workflows/golangci-lint/badge.svg)](https://github.com/syntaqx/collect/actions?query=workflow%3Agolangci-lint)
 [![codecov](https://codecov.io/gh/syntaqx/collect/branch/master/graph/badge.svg)](https://codecov.io/gh/syntaqx/collect)
-[![Go Report Card](https://goreportcard.com/badge/github.com/syntaqx/protokit)](https://goreportcard.com/report/github.com/syntaqx/protokit)
-[![GoDoc](https://godoc.org/github.com/syntaqx/collect?status.svg)](https://godoc.org/github.com/syntaqx/collect)
+[![Go Report Card](https://goreportcard.com/badge/github.com/syntaqx/collect)](https://goreportcard.com/report/github.com/syntaqx/collect)
+[![pkg.go.dev](https://img.shields.io/badge/pkg.go.dev-reference-informational)](https://pkg.go.dev/github.com/syntaqx/collect)
 
 > `collect` provides functions to perform operations on collections of data.
 
